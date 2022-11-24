@@ -1,0 +1,115 @@
+* {
+	list-style: none;
+	font-family: "Raleway";
+	box-sizing: border-box;
+	max-width: 1400px;
+}
+
+body {
+	
+	position: relative;
+	background: #FFFFFF;
+	overflow: hidden;
+}
+
+/************************************/
+/*				HEADER				*/
+/************************************/
+
+header {
+	display: block;
+}
+
+.navbar {
+	width: 100%;
+	height: 12%;
+	background: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-left: 4%;
+}
+
+.navbar .inner_navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+}
+
+.navbar .menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	/* border-top: 2px solid #0065FC; */
+	position: relative;
+}
+
+.navbar .menu .select {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	border-top: 2px solid #0065FC;
+	position: relative;
+}
+
+.navbar .menu ul {
+	display: flex;
+	/* justify-content: flex-start; */
+}
+
+.navbar .menu ul li a {
+	font-family: 'Raleway';
+	font-style: normal;
+	
+	text-decoration: none;
+	margin-right: 44px;
+	text-align: center;
+	padding: 40px;
+	color: rgb(0, 0, 0);
+	font-size: 16px;
+	/* letter-spacing: 2px; */
+	transition: all 0.2s ease;
+	/* background-color: red; */
+}
+
+.navbar .menu ul li a.active,
+.navbar .menu ul li a:hover {
+	color: #0065FC;
+}
+
+.head_set_logo {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.logo_image {
+	width: 61.09px;
+	height: 19px;
+}
+
+.description {
+	color: black;
+}
+
+/************************************/
+/*				SECTION1			*/
+/************************************/
+
+
+
+
+
+
+
+
+/************************************/
+/*				SECTION2			*/
+/************************************/
+
+/************************************/
+/*				FOOTER				*/
+/************************************/
