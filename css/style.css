@@ -4,6 +4,8 @@
 
 	box-sizing: border-box;
 	max-width: 1400px;
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -19,17 +21,16 @@ body {
 /*				HEADER				*/
 /************************************/
 
+/* 				NAVBAR				*/
+
 .head {
 	display: block;
 }
 
 .navbar {
 	width: 100%;
-	height: 15%;
-	position: fixed;
+	position: absolute;
 	top: 0;
-
-	background: white;
 }
 
 .navbar .inner_navbar {
@@ -45,47 +46,47 @@ body {
 	position: relative;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 
 	height: 100%;
+	padding-right: 100px;
+	padding-left: 50px;
 }
 
-.navbar .menu .select {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-
-	border-top: 2px solid #0065FC;
-
+.navbar .menu a {
 	height: 100%;
-}
-
-.navbar .menu ul {
-	display: flex;
-}
-
-.navbar .menu ul li a {
-	font-family: 'Raleway';
-	font-style: normal;
 	text-decoration: none;
-	font-size: 16px;
-	line-height: 19px;
-	font-weight: 500;
 
-	margin-right: 44px;
-	margin-left: -10px;
-	text-align: center;
 	padding: 20px;
 
-	color: rgb(0, 0, 0);
-
-	transition: all 0.2s ease;
+	/* background: red; */
+	transition: 0.3s;
+	border-top: 2px solid white;
 }
 
-.navbar .menu ul li a.active,
-.navbar .menu ul li a:hover {
+.navbar .menu div {
+	position: relative;
+	top: 35px;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	transition: 0.2s;
+}
+
+/* BIG PROBLEM : NO HOVER DIV WHEN I PLACE A CURSOR ON <A> ! ONLY WORK ON <DIV> */
+
+.navbar .menu div:hover, /*!*/
+.navbar .menu div:target {
 	color: #0065FC;
 }
+
+/* BIG PROBLEM : TARGET DONT WORK WHEN I CLICK ON <A> OR <DIV> ! */
+
+
+.navbar .menu a:target, /*!*/
+.navbar .menu a:hover {
+	border-color: #0065FC;
+}
+
+/* 				LOGO				*/
 
 .head_set_logo {
 	display: flex;
@@ -97,6 +98,8 @@ body {
 	height: 19px;
 }
 
+/* 				TITLE				*/
+
 .description {
 	position: absolute;
 
@@ -106,20 +109,23 @@ body {
 
 	width: 100%;
 	margin-top: 1px;
-	top: 126px;
+	top: 140px;
 
 	color: black;
 }
 
-.description p {
+.description .s_title {
 	font-weight: 400;
+	margin-top: 10px;
 	font-size: large;
 }
 
+/* 				SEARCH				*/
+
 .search {
-	display: flex;
-	position: relative;
-	top: 230px;
+	position: absolute;
+
+	top: 220px;
 }
 
 .search .loc_bar {
@@ -130,6 +136,7 @@ body {
 	width: 50px;
 	height: 49px;
 
+	/* SVG LOGO */
 	vertical-align: middle;
 	align-items: center;
 	justify-content: center;
@@ -175,7 +182,7 @@ body {
 	line-height: 21px;
 	text-align: center;
 
-	border: 1px solid #0065FC;
+	border: 0px;
 	border-radius: 0px 15px 15px 0px;
 
 	color: white;
@@ -183,9 +190,70 @@ body {
 	cursor: pointer;
 }
 
+/* 				FILTER				*/
+
+.filter {
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+
+	top: 280px;
+	height: 50px;
+	left: 10px;
+
+	align-items: center;
+
+	font-weight: 700;
+}
+
+.filter .b_eco {
+	display: flex;
+	border: 2px solid #D9D9D9;
+	border-radius: 25px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 40px;
+
+	padding: 15px;
+	margin: 15px;
+	
+	text-decoration: none;
+
+	align-items: center;
+
+	transition: 0.5s;
+}
+
+.filter .b_eco:hover {
+	background-color: #DEEBFF;
+}
+
+.filter .t_filter {
+	padding-left: 15px;
+}
+
+/* 				INFO				*/
+
+.info {
+	position: absolute;
+	display: flex;
+	top: 370px;
+
+	/* SVG LOGO */
+	vertical-align: middle;
+	align-items: center;
+	justify-content: center;
+
+	color: black;
+}
+
+.info p {
+	margin-left: 15px;
+}
 
 /************************************/
-/*				SECTION1			*/
+/*				HOUSING				*/
 /************************************/
 
 
@@ -196,7 +264,7 @@ body {
 
 
 /************************************/
-/*				SECTION2			*/
+/*				ACTIVITIES			*/
 /************************************/
 
 /************************************/
