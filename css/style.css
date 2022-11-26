@@ -71,18 +71,13 @@ body {
 	transition: 0.2s;
 }
 
-/* BIG PROBLEM : NO HOVER DIV WHEN I PLACE A CURSOR ON <A> ! ONLY WORK ON <DIV> */
-
-.navbar .menu div:hover, /*!*/
-.navbar .menu div:target {
+.navbar .menu a:hover div,
+.navbar .menu a:target div {
 	color: #0065FC;
 }
 
-/* BIG PROBLEM : TARGET DONT WORK WHEN I CLICK ON <A> OR <DIV> ! */
-
-
-.navbar .menu a:target, /*!*/
-.navbar .menu a:hover {
+.navbar .menu a:target,
+.navbar .menu div:target {
 	border-color: #0065FC;
 }
 
