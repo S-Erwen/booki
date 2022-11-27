@@ -88,14 +88,11 @@ body {
 	transition: 0.2s;
 }
 
-.navbar .menu a:hover div,
-.navbar .menu a:target div {
+.navbar .menu a:hover div {
 	color: #0065FC;
 }
 
-.navbar .menu a:target,
-.navbar .menu a:hover,
-.navbar .menu div:target {
+.navbar .menu a:hover {
 	border-color: #0065FC;
 }
 
@@ -275,7 +272,8 @@ body {
 	flex-wrap: wrap;
 
 	top: 420px;
-	width: 880px;
+	/* width: 880px; */
+	width: 62.8%;
 	height: 600px;
 
 	background: #F2F2F2;
@@ -459,8 +457,97 @@ body {
 /*				ACTIVITIES			*/
 /************************************/
 
+.activities {
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
 
+	top: 1075px;
+}
+
+.activities .act_box {
+	position: relative;
+	top: 50px;
+
+	margin-right: 43px;
+	margin-bottom: 50px;
+
+	width: 302px;
+	height: 444.5px;
+
+	background: white;
+	color: #000000;
+	border-radius: 20px;
+
+	box-shadow: 2px 2px 15px rgb(228, 228, 228);
+	text-decoration: none;
+
+	transition: 0.2s;
+}
+
+.activities .act_box:hover {
+	box-shadow: 2px 2px 15px rgb(160, 160, 160);
+}
+
+.activities .act_img {
+	box-sizing: border-box;
+	object-fit: cover;
+
+	width: 302px;
+	height: 389px;
+	bottom: 37.69%;
+
+	border-radius: 20px 20px 0px 0px;
+}
+
+.activities .act_box .act_name {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+
+	padding-top: 13px;
+	padding-left: 19px;
+}
 
 /************************************/
 /*				FOOTER				*/
 /************************************/
+
+.foot {
+	position: absolute;
+	display: flex;
+
+	justify-content: space-between;
+	padding-top: 50px;
+	padding-left: 5%;
+	padding-right: 25%;
+
+	top: 1640px;
+	width: 96%;
+	height: 255px;
+
+	background: #F2F2F2;
+}
+
+.foot .box .t_foot {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	margin-bottom: 15px;
+
+}
+
+.foot .box a {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-decoration: none;
+
+	margin-left: 19px;
+
+	color: #000000;
+}
+
+.foot .box p {
+	margin-bottom: -7px;
+}
