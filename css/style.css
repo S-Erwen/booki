@@ -18,7 +18,8 @@ body {
 	background: #FFFFFF;
 }
 
-/* 				SCROLLBAR				*/
+/* ================================= */
+/* =========== SCROLLBAR =========== */
 
 ::-webkit-scrollbar {
 	width: 10px;
@@ -36,11 +37,10 @@ body {
 	background: #555; 
 }
 
-/************************************/
-/*				HEADER				*/
-/************************************/
 
-/* 				NAVBAR				*/
+/* ============================== */
+/* =========== HEADER =========== */
+/* =========== NAVBAR =========== */
 
 .head {
 	display: block;
@@ -65,6 +65,7 @@ body {
 .navbar .menu {
 	position: relative;
 	display: flex;
+
 	align-items: center;
 
 	height: 100%;
@@ -84,7 +85,9 @@ body {
 
 .navbar .menu div {
 	position: relative;
+
 	top: 35px;
+
 	text-decoration: none;
 	color: rgb(0, 0, 0);
 	transition: 0.2s;
@@ -98,7 +101,8 @@ body {
 	border-color: #0065FC;
 }
 
-/* 				LOGO				*/
+/* ============================ */
+/* =========== LOGO =========== */
 
 .head_set_logo {
 	display: flex;
@@ -110,7 +114,8 @@ body {
 	height: 19px;
 }
 
-/* 				TITLE				*/
+/* ============================= */
+/* =========== TITLE =========== */
 
 .description {
 	font-style: normal;
@@ -118,23 +123,24 @@ body {
 	font-weight: 700;
 
 	width: 94%;
+
 	margin-top: 1px;
 	margin-right: 5%;
-
-	top: auto;
 	margin-bottom: 20px;
+	top: auto;
 
 	color: black;
-
 }
 
 .description .s_title {
 	font-weight: 400;
-	margin-top: 10px;
 	font-size: large;
+
+	margin-top: 10px;
 }
 
-/* 				SEARCH				*/
+/* ============================== */
+/* =========== SEARCH =========== */
 
 .search {
 	position: relative;
@@ -208,53 +214,20 @@ body {
 
 	width: 17px;
 	height: 17px;
-	color: white;
+
 	top: 16px;
 	left: 16px;
+
+	color: white;
 }
 
-@media screen and (max-width: 768px) {
-	.search .sub {
-		width: 49px;
-		height: 49px;
-		color: #0065FC;
-		font-size: 0px;
-		top: -7px;
-	}
-	.search .sub svg {
-		display: flex;
-
-	}
-}
-
-/* 				INFO				*/
-
-.info {
-	position: relative;
-	display: flex;
-	width: 94%;
-
-	/* top: 370px; */
-
-	align-items: center;
-	color: black;
-
-	margin-bottom: 39px;
-}
-
-.info p {
-	margin-left: 35px;
-}
-
-.info svg {
-	position: absolute;
-}
-
-/* 				FILTER				*/
+/* ============================== */
+/* =========== FILTER =========== */
 
 .filter {
 	position: relative;
 	display: block;
+
 	align-items: flex-end;
 	font-weight: 700;
 
@@ -269,9 +242,10 @@ body {
 
 .filter .box_f {
 	position: relative;
-	left: 80px;
 	display: flex;
 	flex-wrap: wrap;
+
+	left: 80px;
 }
 
 .filter .b_eco {
@@ -287,8 +261,9 @@ body {
 	margin-right: 15px;
 
 	text-decoration: none;
-
 	align-items: center;
+
+	color: #000000;
 
 	transition: 0.5s;
 }
@@ -301,29 +276,30 @@ body {
 	padding-left: 15px;
 }
 
-@media screen and (max-width: 768px) {
+/* ============================ */
+/* =========== INFO =========== */
 
-	.filter {
-		margin-top: 25px;
-	}
+.info {
+	position: relative;
+	display: flex;
 
-	.filter .f_title {
-		width: 100%;
-		top: 0px;
-	}
+	width: 94%;
+	margin-bottom: 39px;
 
-	.filter .box_f {
-		left: 0px;
-	}
-
-	.filter .b_eco {
-		width: 45%;
-	}
+	align-items: center;
+	color: black;
 }
 
-/************************************/
-/*				HOUSING				*/
-/************************************/
+.info p {
+	margin-left: 35px;
+}
+
+.info svg {
+	position: absolute;
+}
+
+/* =============================== */
+/* =========== HOUSING =========== */
 
 .housing {
 	position: relative;
@@ -335,13 +311,6 @@ body {
 	border-radius: 20px;
 
 	padding-top: 40px;
-}
-
-@media screen and (max-width: 992px)
-{
-	.housing {
-		width: 95%;
-	}
 }
 
 .housing .title {
@@ -366,7 +335,6 @@ body {
 	position: relative;
 	top: 30px;
 
-	/* margin-right: 30px; */
 	margin-bottom: 30px;
 
 	width: 29%;
@@ -384,7 +352,6 @@ body {
 .housing .house:hover{
 	box-shadow: 2px 2px 20px rgb(172, 172, 172);
 }
-
 
 .housing .house_img {
 	box-sizing: border-box;
@@ -444,19 +411,18 @@ body {
 	font-weight: 700;
 	font-size: 22px;
 	line-height: 26px;
+
 	position: relative;
 }
 
-/************************************/
-/*				POPULAR				*/
-/************************************/
+/* =============================== */
+/* =========== POPULAR =========== */
 
 .most_polular {
 	position: relative;
 	display: block;
 	flex-wrap: wrap;
 
-	/* top: 420px; */
 	left: 65%;
 	margin-top: -630px;
 
@@ -471,7 +437,6 @@ body {
 }
 
 .most_polular .box_p {
-	/* position: absolute; */
 	display: flex;
 	flex-wrap: wrap;
 
@@ -482,17 +447,12 @@ body {
 .most_polular .title {
 	width: 78%;
 	height: 30px;
-	/* white-space: nowrap; */
-
-	/* background: greenyellow; */
-	/* margin-bottom: 75px; */
 }
 
 .most_polular .svg_tr {
 	position: absolute;
 	right: 12%;
 	top: 46px;
-	/* bottom: 125px; */
 }
 
 .most_polular .most_p {
@@ -542,7 +502,6 @@ body {
 	line-height: 19px;
 
 	overflow: hidden;
-	white-space: wrap;
 
 	padding-bottom: 1%;
 	margin-top: -130px;
@@ -564,50 +523,9 @@ body {
 	bottom: 10px;
 }
 
-@media screen and (min-width: 992px) {
-	.most_polular .h_title {
-		max-height: 55px;
-	}
-}
 
-@media screen and (max-width: 992px)
-{
-	.most_polular {
-		top: 0px;
-		left: 0px;
-		width: 95%;
-		height: 300px;
-
-		margin-top: 40px;
-	}
-
-	.most_polular .svg_tr {
-		right: 5%;
-	}
-
-	.most_polular .most_p {
-		width: 30%;
-		margin-right: 20px;
-		left: 0px;
-	}
-
-	.most_polular .h_title {
-		font-size: 14px;
-		margin-top: -138px;
-	}
-
-	.most_polular .price {
-		font-size: 12px;
-	}
-
-	.most_polular .stars {	
-		bottom: 5px;
-	}
-}
-
-/************************************/
-/*				ACTIVITIES			*/
-/************************************/
+/* ================================== */
+/* =========== ACTIVITIES =========== */
 
 .activities {
 	position: relative;
@@ -636,11 +554,9 @@ body {
 	position: relative;
 	top: 80px;
 
-	/* margin-right: 43px; */
-	/* margin-bottom: 50px; */
-
 	width: 23%;
 	height: 90%;
+
 	background: white;
 	color: #000000;
 	border-radius: 20px;
@@ -668,26 +584,14 @@ body {
 .activities .act_name {
 	font-weight: 700;
 	font-size: 16px;
+	justify-content: center;
 
 	padding-left: 19px;
-	justify-content: center;
 	margin: 5% 0;
 }
 
-@media screen and (max-width: 992px)
-{
-	.activities {
-		height: 323px;
-	}
-
-	.activities .act_img {
-		height: 80%;
-	}
-}
-
-/************************************/
-/*				FOOTER				*/
-/************************************/
+/* ============================== */
+/* =========== FOOTER =========== */
 
 .foot {
 	position: relative;
@@ -697,21 +601,26 @@ body {
 	padding-top: 50px;
 	padding-left: 5%;
 	padding-right: 25%;
-
-	/* top: 1700px; */
 	margin-top: 100px;
+
 	width: 95%;
 	height: 255px;
 
 	background: #F2F2F2;
+	
+}
+
+.foot .box {
+	margin-right: 25%;
 }
 
 .foot .box .t_foot {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 21px;
-	margin-bottom: 15px;
 
+	margin-bottom: 15px;
+	
 }
 
 .foot .box a {
@@ -727,4 +636,284 @@ body {
 
 .foot .box p {
 	margin-bottom: -7px;
+}
+
+/* ========================== */
+/* =========== PC =========== */
+
+@media screen and (min-width: 992px) {
+	.most_polular .h_title {
+		max-height: 55px;
+	}
+}
+
+/* =========================== */
+/* =========== TAB =========== */
+
+
+@media screen and (max-width: 992px)
+{
+	.most_polular {
+		top: 0px;
+		left: 0px;
+		width: 95%;
+		height: 300px;
+
+		margin-top: 40px;
+	}
+
+	.most_polular .svg_tr {
+		right: 5%;
+	}
+
+	.most_polular .most_p {
+		width: 30%;
+
+		margin-right: 20px;
+		left: 0px;
+	}
+
+	.most_polular .h_title {
+		font-size: 14px;
+		margin-top: -138px;
+	}
+
+	.most_polular .price {
+		font-size: 12px;
+	}
+
+	.most_polular .stars {	
+		bottom: 5px;
+	}
+
+	.housing {
+		width: 95%;
+	}
+
+	.activities {
+		height: 323px;
+	}
+
+	.activities .act_img {
+		height: 80%;
+	}
+}
+
+/* ============================== */
+/* =========== MOBILE =========== */
+
+@media screen and (max-width: 768px) {
+
+	body {
+		left: 0;
+		margin-right: 0;
+	}
+
+	.navbar {
+		margin-bottom: 40px;
+	}
+
+	.navbar .inner_navbar {
+		display: block;
+	
+		height: 100px;
+		margin-top: 30px;
+	}
+
+	.navbar .menu {
+		position: relative;
+		display: flex;
+	
+		padding: 0;
+	
+		width: 100%;
+	}
+
+	.navbar .menu a {
+		width: 100%;
+		height: 80%;
+	
+		padding: 0px;
+	
+		border-top: 0px solid white;
+		border-bottom: 4px solid white;
+	}
+
+	.navbar .menu div {	
+		text-align: center;
+
+		font-size: 18px;
+	}
+
+	.head_set_logo {
+		justify-content: center;
+	}
+
+	.description {
+		margin-left: 3%;
+	}
+
+	.search {
+		margin-left: 3%;
+	}
+
+	.search .s_type {
+		width: 90%;
+		padding-right: 40px;
+	}
+
+	.search .sub {
+		width: 49px;
+		height: 49px;
+
+		color: #0065FC;
+		font-size: 0px;
+
+		flex-wrap: nowrap;
+		top: -7px;
+	}
+
+	.search .sub svg {
+		display: flex;
+	}
+
+	.filter {
+		margin-top: 25px;
+		margin-left: 3%;
+		font-size: 20px;
+	}
+
+	.filter .f_title {
+		width: 100%;
+		top: 0px;
+	}
+
+	.filter .box_f {
+		left: 0px;
+		font-size: 11px;
+	}
+
+	.filter .b_eco {
+		width: 45%;
+	}
+
+	.info {
+		margin-left: 4%;
+	}
+
+	.housing {
+		width: 100%;
+		margin-top: 640px;
+		height: 640px;
+
+		border-radius: 0px;
+		background-color: white;
+	}
+
+	.housing .title {
+		padding-left: 25px;
+		margin-top: 50px;
+	}
+
+	.housing .box_h {
+		height: max-content;
+		width: 100%;
+		margin: 0;
+		overflow: visible;
+	}
+
+	.housing .house {
+		width: 90%;
+	}
+	
+	.housing .more {
+		display: none;
+	}
+
+	.most_polular {
+		width: 100%;
+		margin-top: -1230px;
+		border-radius: 0px;
+	
+		height: auto;
+	}
+
+	.most_polular .box_p {
+		display: flex;
+		flex-wrap: wrap;
+	
+		height: 500px;
+		margin-top: 55px;
+	}
+
+	.most_polular .title, .most_p {
+		margin-left: -3%;
+	}
+
+	.most_polular .most_p {
+		width: 100%;
+	}
+
+	.most_polular .h_title {
+		padding-top: 8px;
+		font-size: 16px;
+	}
+
+	.most_polular .price {
+		font-size: 14px;
+	}
+
+	.activities {
+		top: 1500px;
+
+		height: 199px;
+		width: 100%;
+	}
+
+	.activities .title {
+		width: 150px;
+		margin-left: 25px;
+		margin-bottom: -40px;
+	}
+
+	.activities .act_box {
+		width: 90%;
+	
+		display: flex;
+		flex-wrap: wrap;
+
+		margin: 25px;
+	}
+
+	.activities .box {
+		display: unset;
+		width: 100%;
+	}
+
+	.activities .act_img {
+		height: 70%;
+	}
+
+	.activities .act_name {
+		margin: 0;
+	}
+
+	.foot {
+		top: 2175px;
+		display: block;
+
+		height: 470px;
+		width: 100%;
+	}
+
+	.foot .box {
+		width: 100%;
+		margin-left: 10px;
+		margin-bottom: 50px;
+	}
+
+	.foot .box .t_foot {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 }
